@@ -12,7 +12,7 @@ void draw(){
   background(0);
   image(img, 0, 0, width, height/2);
   b.update();
-  if (b.py >= 770){
+  if (b.py >= 770){ // if ball gets below the edge, game over
     fill(203,72,72);
     textSize(32);
     text("Game Over", width/2-90, height/2+32);
@@ -22,7 +22,7 @@ void draw(){
 }
 
 void keyPressed(){
-  if (key == ' '){
+  if (key == ' '){ //restart
     setup();
   }
 }
